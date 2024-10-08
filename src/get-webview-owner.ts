@@ -1,4 +1,4 @@
-import { WebviewOwner } from "./interfaces";
+export type WebviewOwner = "LinkedIn" | "Facebook" | null;
 
 /**
  * When possible, determine the owner of the webview based on the user agent.
@@ -6,5 +6,11 @@ import { WebviewOwner } from "./interfaces";
  * If the user agent does not match a webview or the webview owner cannot be determined, return null.
  */
 export function getWebviewOwner(userAgent: string): WebviewOwner {
-  throw new Error("Not implemented");
+  if (userAgent.includes("LinkedInApp")) {
+    return "LinkedIn";
+  }
+  if (userAgent.includes("FBAN/FBIOS")) {
+    return "Facebook";
+  }
+  return null;
 }
