@@ -1,6 +1,6 @@
 {
   "name": "google-oauth-webview",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A library to detect web views unsupported by Google OAuth",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
