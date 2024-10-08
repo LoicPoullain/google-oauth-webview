@@ -1,3 +1,5 @@
 export function isWebviewUnsupportedByGoogleOAuth(userAgent: string): boolean {
-  return false;
+  return (
+    !userAgent.includes("LinkedInApp") && !userAgent.includes("FBAN/FBIOS")
+  );
 }
