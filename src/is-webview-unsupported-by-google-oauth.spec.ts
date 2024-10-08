@@ -2,9 +2,9 @@ import { isWebviewUnsupportedByGoogleOAuth } from "./is-webview-unsupported-by-g
 import { browserUserAgents, webviewUserAgents } from "./user-agents";
 
 describe("isWebviewUnsupportedByGoogleOAuth", () => {
-  it("should return true for all browsers", () => {
+  it("should return false for all browsers", () => {
     for (const { browser, os, userAgent } of browserUserAgents) {
-      if (!isWebviewUnsupportedByGoogleOAuth(userAgent)) {
+      if (isWebviewUnsupportedByGoogleOAuth(userAgent)) {
         throw new Error(
           `Browser ${browser} on ${os} should NOT be considered as a webview.`
         );
@@ -20,7 +20,7 @@ describe("isWebviewUnsupportedByGoogleOAuth", () => {
       isSupportedByGoogleOAuth,
     } of webviewUserAgents) {
       if (
-        isWebviewUnsupportedByGoogleOAuth(userAgent) !==
+        isWebviewUnsupportedByGoogleOAuth(userAgent) ===
         isSupportedByGoogleOAuth
       ) {
         throw new Error(
