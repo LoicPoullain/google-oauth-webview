@@ -2,11 +2,10 @@
   "compilerOptions": {
     "outDir": "lib/",
     "module": "commonjs",
-    "target": "es2021",
+    "target": "es2023",
     "strict": true,
     "sourceMap": true,
-    "declaration": true,
-    "lib": ["es2021", "dom"]
+    "declaration": true
   },
   "include": ["./src/**/*.ts"]
 }
