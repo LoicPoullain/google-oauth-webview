@@ -1,8 +1,4 @@
-# README
-
-|  Node min versions | TS min version |
-| ------------------ | -------------- |
-| 20, 22             | 5.6            |
+# Google OAuth Webview
 
 Google OAuth fails in some webviews (in-app browsers) and displays a `403 disallowed_useragent` error message. This library detects whether the user is in a webview that is not supported by Google OAuth.
 
@@ -88,3 +84,9 @@ _Legend_
 - DO NOT copy and paste user agents returned by ChatGPT or other artificial intelligence platforms.
 
 We want accurate data that has been tested on real devices with real applications.
+
+## Supported Node and TypeScript versions
+
+|  Node min versions | TS min version |
+| ------------------ | -------------- |
+| 20, 22             | 5.6            |
