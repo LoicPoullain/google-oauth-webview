@@ -1,3 +1,3 @@
-describe("get-webview-owner", () => {
+describe("getWebviewOwner", () => {
   it("empty test", () => {});
 });
