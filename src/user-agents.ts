@@ -7,10 +7,10 @@ export const webviewUserAgents: {
     | "Facebook Messenger"
     | "Twitter"
     | "LinkedIn"
-    | "reddit";
-  // | "YouTube"
-  // | "Discord"
-  // | "Facebook App";
+    | "reddit"
+    | "YouTube"
+    | "Discord"
+    | "Facebook App";
   userAgent: string;
   isSupportedByGoogleOAuth: boolean;
 }[] = [
@@ -63,6 +63,27 @@ export const webviewUserAgents: {
     userAgent:
       "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/604.1",
     isSupportedByGoogleOAuth: true,
+  },
+  {
+    os: "iOS",
+    app: "YouTube",
+    userAgent:
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/604.1",
+    isSupportedByGoogleOAuth: true,
+  },
+  {
+    os: "iOS",
+    app: "Discord",
+    userAgent:
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/604.1",
+    isSupportedByGoogleOAuth: true,
+  },
+  {
+    os: "iOS",
+    app: "Facebook App",
+    userAgent:
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21G93 [FBAN/FBIOS;FBAV/484.0.0.53.115;FBBV/648018468;FBDV/iPhone12,8;FBMD/iPhone;FBSN/iOS;FBSV/17.6.1;FBSS/2;FBID/phone;FBLC/fr_FR;FBOP/5;FBRV/0;IABMV/1]",
+    isSupportedByGoogleOAuth: false,
   },
 ];
 
