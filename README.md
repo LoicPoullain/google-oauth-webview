@@ -1,6 +1,6 @@
 # Google OAuth Webview
 
-Google OAuth fails in some webviews (in-app browsers) and displays a `403 disallowed_useragent` error message. This library detects whether the user is in a webview that is not supported by Google OAuth.
+Google OAuth fails in some webviews (in-app browsers) and displays a **`403 disallowed_useragent`** error message. This library detects whether the user is in a webview that is not supported by Google OAuth.
 
 ## Installation
 
