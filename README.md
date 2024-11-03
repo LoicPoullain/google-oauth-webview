@@ -23,7 +23,7 @@ const webviewOwner: WebviewOwner = getWebviewOwner(navigator.userAgent);
 
 ## Sponsor
 
-[![Linito logo](https://www.linito.io/images/logos/logo_with_title_298x96.png)](https://linito.io/?utm_source=github_or_npm&utm_medium=referral&utm_campaign=google-oauth-webview_sponsor_logo)
+[![Linito logo](https://github.com/LoicPoullain/google-oauth-webview/blob/main/sponsors/linito.png)](https://linito.io/?utm_source=github_or_npm&utm_medium=referral&utm_campaign=google-oauth-webview_sponsor_logo)
 
 ## Browsers and applications tested
 
