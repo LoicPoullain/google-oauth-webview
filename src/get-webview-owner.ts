@@ -1,4 +1,4 @@
-export type WebviewOwner = "LinkedIn" | "Facebook" | null;
+export type WebviewOwner = "LinkedIn" | "Facebook" | "Instagram" | null;
 
 /**
  * When possible, determine the owner of the webview based on the user agent.
@@ -11,6 +11,9 @@ export function getWebviewOwner(userAgent: string): WebviewOwner {
   }
   if (userAgent.includes("FBAN/FBIOS")) {
     return "Facebook";
+  }
+  if (userAgent.includes("Instagram")) {
+    return "Instagram";
   }
   return null;
 }

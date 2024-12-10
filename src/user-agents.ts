@@ -10,7 +10,8 @@ export const webviewUserAgents: {
     | "reddit"
     | "YouTube"
     | "Discord"
-    | "Facebook App";
+    | "Facebook App"
+    | "Instagram";
   userAgent: string;
   isSupportedByGoogleOAuth: boolean;
 }[] = [
@@ -83,6 +84,13 @@ export const webviewUserAgents: {
     app: "Facebook App",
     userAgent:
       "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21G93 [FBAN/FBIOS;FBAV/484.0.0.53.115;FBBV/648018468;FBDV/iPhone12,8;FBMD/iPhone;FBSN/iOS;FBSV/17.6.1;FBSS/2;FBID/phone;FBLC/fr_FR;FBOP/5;FBRV/0;IABMV/1]",
+    isSupportedByGoogleOAuth: false,
+  },
+  {
+    os: "iOS",
+    app: "Instagram",
+    userAgent:
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21G93 Instagram 359.0.0.37.88 (iPhone13,3; iOS 17_6_1; nl_NL; nl; scale=3.00; 1170x2532; 666576740) NW/3",
     isSupportedByGoogleOAuth: false,
   },
 ];
