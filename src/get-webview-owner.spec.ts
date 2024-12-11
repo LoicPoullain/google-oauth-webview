@@ -27,7 +27,7 @@ describe("getWebviewOwner", () => {
 
   it('should return "Instagram" if the webview owner is Instagram', () => {
     const instagramUserAgents = webviewUserAgents.filter(
-      ({ app }) => app === "Facebook App" || app === "Facebook Messenger"
+      ({ app }) => app === "Instagram"
     );
 
     instagramUserAgents.forEach(({ userAgent }) => {

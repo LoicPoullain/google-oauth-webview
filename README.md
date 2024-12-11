@@ -65,12 +65,13 @@ _Legend_
 | YouTube            | ✅  | ❌      | yes            | yes                           |
 | Discord            | ✅  | ❌      | yes            | yes                           |
 | Facebook App       | ✅  | ❌      | yes            | no                            |
+| Instagram          | ✅  | ❌      | yes            | no                            |
 
 ### Applications that still need to be tested
 
 | Application | iOS | Android |
 | ----------- | --- | ------- |
-| Instagram   | ❌  | ❌      |
+| Instagram   | ✅  | ❌      |
 | TikTok      | ❌  | ❌      |
 | Snapshat    | ❌  | ❌      |
 
