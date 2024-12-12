@@ -42,7 +42,7 @@
     "lib/"
   ],
   "devDependencies": {
-    "@types/mocha": "^10.0.9",
+    "@types/mocha": "^10.0.10",
     "@types/node": "^18.19.55",
     "mocha": "^10.7.3",
     "rimraf": "^6.0.1",

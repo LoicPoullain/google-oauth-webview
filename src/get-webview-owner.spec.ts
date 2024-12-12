@@ -25,11 +25,21 @@ describe("getWebviewOwner", () => {
     });
   });
 
-  it("should return null if the webview owner is not LinkedIn or Facebook", () => {
+  it('should return "Instagram" if the webview owner is Instagram', () => {
+    const instagramUserAgents = webviewUserAgents.filter(
+      ({ app }) => app === "Instagram"
+    );
+
+    instagramUserAgents.forEach(({ userAgent }) => {
+      strictEqual(getWebviewOwner(userAgent), "Instagram");
+    });
+  });
+
+  it("should return null if the webview owner is not LinkedIn, Facebook or Instagram", () => {
     const otherAgents = webviewUserAgents
       .filter(
         ({ app }) =>
-          !["LinkedIn", "Facebook App", "Facebook Messenger"].includes(app)
+          !["LinkedIn", "Facebook App", "Facebook Messenger", "Instagram"].includes(app)
       )
       .map(({ userAgent }) => userAgent)
       .concat(browserUserAgents.map(({ userAgent }) => userAgent));
