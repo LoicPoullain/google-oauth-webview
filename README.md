@@ -71,7 +71,6 @@ _Legend_
 
 | Application | iOS | Android |
 | ----------- | --- | ------- |
-| Instagram   | ✅  | ❌      |
 | TikTok      | ❌  | ❌      |
 | Snapshat    | ❌  | ❌      |
 
